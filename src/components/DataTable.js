@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import '../styles/data-table.css';
 
 import dataJSON from '../data/users.json';

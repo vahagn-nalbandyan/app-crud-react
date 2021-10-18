@@ -3,9 +3,6 @@ import React, {useState, useRef} from "react";
 import '../styles/action-box.css';
 
 const ActionBox = ({ setNewUser }) => {
-    const [actionTitle, setActionTitle] = useState('Create User');
-    const [submitButtonText, setSubmitButtonText] = useState('CREATE USER');
-    const [cancelButtonText, setCancelButtonText] = useState('RESET FORM');
 
     const [firstNameValue, setFirstNameValue] = useState('');
     const [lastNameValue, setLastNameValue] = useState('');
@@ -96,7 +93,7 @@ const ActionBox = ({ setNewUser }) => {
     
     return(
         <div className='action-box'>
-            <h2 className='action-title'>{actionTitle}</h2>
+            <h2 className='action-title'>Create New User</h2>
             <form className='action-box-form'>
                 <label htmlFor='first-name'>FIRST NAME</label>
                 <input ref={firstNameRef} type='text' value={firstNameValue} id='first-name' onChange={onFirstNameChange} />
@@ -107,8 +104,8 @@ const ActionBox = ({ setNewUser }) => {
                 <label htmlFor='gender'>GENDER</label>
                 <input ref={genderRef} type='text' value={genderValue} id='gender' onChange={onGenderChange} />
                 <div className='button-box'>
-                    <button onClick={onCreateClick}>{submitButtonText}</button>
-                    <button onClick={onResetClick}>{cancelButtonText}</button>
+                    <button onClick={onCreateClick}>CREATE USER</button>
+                    <button onClick={onResetClick}>RESET FORM</button>
                 </div>
             </form>
         </div>
