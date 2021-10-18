@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #222;
+}
+
+.app-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    max-width: 1900px;
+    width: 70%;
+}
+
+.app-content .left-box {
+    max-width: 30%;
+    width: 90%;
+}
+
+.app-content .right-box {
+    max-width: 60%;
+    width: 90%;
+}
